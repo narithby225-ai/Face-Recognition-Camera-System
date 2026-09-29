@@ -1,0 +1,11 @@
+# Mobile App Requirements
+kivy==2.2.1
+kivymd==1.1.1
+opencv-python==4.10.0.84
+numpy==1.24.3
+Pillow==10.0.0
+face-recognition==1.3.0
+dlib==19.24.2
+cmake==3.27.0
+buildozer==1.5.0
+cython==0.29.36

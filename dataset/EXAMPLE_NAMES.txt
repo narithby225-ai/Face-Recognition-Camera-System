@@ -1,0 +1,24 @@
+ឧទាហរណ៍ឈ្មោះឯកសារ (Example Filenames):
+
+001_Narith.jpg
+002_Dara.jpg
+003_Sokha.jpg
+004_Chanthy.jpg
+005_Bopha.jpg
+006_Pisey.jpg
+007_Kunthea.jpg
+008_Veasna.jpg
+009_Makara.jpg
+010_Srey.jpg
+
+ទម្រង់ទូទៅ (General Format):
+[ID 3 digits]_[Name].jpg
+
+ID ត្រូវមាន 3 ខ្ទង់ (ID must have 3 digits):
+✓ 001, 002, 003, ..., 099, 100, 101, ...
+✗ 1, 2, 3 (មិនត្រឹមត្រូវ / incorrect)
+
+ឈ្មោះអាចមានដកឃ្លា (Name can have underscores):
+✓ 001_Narith.jpg
+✓ 001_Sok_Narith.jpg
+✓ 001_John_Smith.jpg

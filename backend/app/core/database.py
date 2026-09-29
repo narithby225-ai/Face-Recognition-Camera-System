@@ -1,0 +1,55 @@
+"""
+Database Configuration
+SQLAlchemy setup and session management
+"""
+
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker, Session
+from typing import Generator
+
+from app.core.config import settings
+
+
+# Create database engine
+engine = create_engine(
+    settings.DATABASE_URL,
+    pool_size=10,
+    max_overflow=20,
+    pool_pre_ping=True,
+    pool_recycle=3600,
+    echo=False  # Set to True for SQL query logging
+)
+
+# Create session factory
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Create base class for models
+Base = declarative_base()
+
+
+# Dependency to get database session
+def get_db() -> Generator[Session, None, None]:
+    """
+    Database session dependency
+    Use this in FastAPI route dependencies
+    """
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+# Initialize database
+def init_db() -> None:
+    """Initialize database tables"""
+    Base.metadata.create_all(bind=engine)
+    print("✓ Database tables created")
+
+
+# Drop all tables (use with caution!)
+def drop_db() -> None:
+    """Drop all database tables"""
+    Base.metadata.drop_all(bind=engine)
+    print("✓ Database tables dropped")

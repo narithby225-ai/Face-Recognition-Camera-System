@@ -1,0 +1,131 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+data/database/
+*.pkl
+data/encodings/*.pkl
+data/encodings/*.json
+
+# Logs
+*.log
+logs/
+data/logs/
+
+# Face Recognition Data
+data/registered_faces/
+screenshots/
+temp_frames/
+
+# Large files (optional - uncomment if dataset is too large)
+# dataset/*.jpg
+# dataset/*.png
+# dataset/*.jpeg
+
+# Mobile App Build
+mobile_app/.buildozer/
+mobile_app/bin/
+mobile_app/build/
+mobile_app/*.apk
+mobile_app/*.aab
+
+# Docker
+.docker/
+*.env.docker
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Node modules (if using React Native)
+node_modules/
+package-lock.json
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Security - Never commit these!
+*.key
+*.pem
+*.crt
+private_key.*
+*.p12
+keystore.jks
+
+# Buildozer
+.buildozer/
+bin/
+
+# Android
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+
+# Local configuration
+config/local_*.json
+*_local.*
+
+# Large model files (optional)
+# *.dat
+# models/*.dat

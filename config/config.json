@@ -1,0 +1,35 @@
+{
+  "camera": {
+    "source": 0,
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "recognition": {
+    "tolerance": 0.6,
+    "model": "hog",
+    "num_jitters": 1,
+    "frame_skip": 2
+  },
+  "display": {
+    "show_confidence": true,
+    "show_id": true,
+    "box_color": [0, 255, 0],
+    "text_color": [255, 255, 255],
+    "unknown_color": [0, 0, 255]
+  },
+  "database": {
+    "path": "data/database/faces.db",
+    "encodings_cache": "data/encodings/encodings.pkl"
+  },
+  "registration": {
+    "min_face_size": 20,
+    "num_samples": 5,
+    "sample_interval": 0.5
+  },
+  "paths": {
+    "registered_faces": "data/registered_faces",
+    "logs": "data/logs",
+    "dataset": "dataset"
+  }
+}
